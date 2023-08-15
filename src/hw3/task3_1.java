@@ -1,3 +1,5 @@
+package hw3;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -7,7 +9,7 @@ import java.util.Scanner;
 public class task3_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите данные в формате: Фамилия Имя Отчество датаРождения(формат dd.mm.yyyy) номерТелефона(без +7) пол(m/f)");
+        System.out.println("Введите данные в формате: Фамилия Имя Отчество дата Рождения(формат dd.mm.yyyy) номерТелефона(без +7) пол(m/f)");
         String input = scanner.nextLine();
         String[] data = input.split(" ");
         if (data.length != 6) {
